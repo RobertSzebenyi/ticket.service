@@ -31,4 +31,27 @@
         </plugins>
     </build>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.robert.szebenyi</groupId>
+            <artifactId>core-module</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.robert.szebenyi</groupId>
+            <artifactId>partner-module</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.robert.szebenyi</groupId>
+            <artifactId>ticket-module</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.robert.szebenyi</groupId>
+            <artifactId>api-module</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>

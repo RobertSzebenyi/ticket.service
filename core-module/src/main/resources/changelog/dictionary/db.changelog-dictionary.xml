@@ -1,0 +1,111 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet author="robert.szebenyi" id="database-example-data">
+
+        <insert tableName="Users">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="name" value="Teszt Aladár"/>
+            <column name="email" value="teszt.aladar@otpmobil.com"/>
+        </insert>
+        <insert tableName="Users">
+            <column name="version" value="0"/>
+            <column name="userId" value="2000"/>
+            <column name="name" value="Teszt Benedek"/>
+            <column name="email" value="teszt.benedek@otpmobil.com"/>
+        </insert>
+        <insert tableName="Users">
+            <column name="version" value="0"/>
+            <column name="userId" value="3000"/>
+            <column name="name" value="Teszt Cecília"/>
+            <column name="email" value="teszt.cecilia@otpmobil.com"/>
+        </insert>
+
+        <insert tableName="UserDevice">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="deviceHash" value="F67C2BCBFCFA30FCCB36F72DCA22A817"/>
+        </insert>
+        <insert tableName="UserDevice">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="deviceHash" value="0F1674BD19D3BBDD4C39E14734FFB876"/>
+        </insert>
+        <insert tableName="UserDevice">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="deviceHash" value="3AE5E9658FBD7D4048BD40820B7D227D"/>
+        </insert>
+        <insert tableName="UserDevice">
+            <column name="version" value="0"/>
+            <column name="userId" value="2000"/>
+            <column name="deviceHash" value="FADDFEA562F3C914DCC81956682DB0FC"/>
+        </insert>
+        <insert tableName="UserDevice">
+            <column name="version" value="0"/>
+            <column name="userId" value="3000"/>
+            <column name="deviceHash" value="E68560872BDB2DF2FFE7ADC091755378"/>
+        </insert>
+
+        <insert tableName="UserToken">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="token" value="dGVzenQuYWxhZGFyQG90cG1vYmlsLmNvbSYxMDAwJkY2N0MyQkNCRkNGQTMwRkNDQjM2RjcyRENBMjJBODE3"/>
+        </insert>
+        <insert tableName="UserToken">
+            <column name="version" value="0"/>
+            <column name="userId" value="2000"/>
+            <column name="token" value="dGVzenQuYmVuZWRla0BvdHBtb2JpbC5jb20mMjAwMCZGQURERkVBNTYyRjNDOTE0RENDODE5NTY2ODJEQjBGQw=="/>
+        </insert>
+        <insert tableName="UserToken">
+            <column name="version" value="0"/>
+            <column name="userId" value="3000"/>
+            <column name="token" value="dGVzenQuY2VjaWxpYUBvdHBtb2JpbC5jb20mMzAwMCZFNjg1NjA4NzJCREIyREYyRkZFN0FEQzA5MTc1NTM3OA=="/>
+        </insert>
+        <insert tableName="UserToken">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="token" value="dGVzenQuYWxhZGFyQG90cG1vYmlsLmNvbSYxMDAwJjBGMTY3NEJEMTlEM0JCREQ0QzM5RTE0NzM0RkZCODc2"/>
+        </insert>
+        <insert tableName="UserToken">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="token" value="dGVzenQuYWxhZGFyQG90cG1vYmlsLmNvbSYxMDAwJjNBRTVFOTY1OEZCRDdENDA0OEJENDA4MjBCN0QyMjdE"/>
+        </insert>
+
+        <insert tableName="UserBankCard">
+            <column name="version" value="0"/>
+            <column name="userId" value="1000"/>
+            <column name="cardId" value="C0001"/>
+            <column name="cardnumber" value="5299706965433676"/>
+            <column name="cvc" value="123"/>
+            <column name="name" value="Teszt Aladár"/>
+            <column name="amount" value="1000"/>
+            <column name="currency" value="HUF"/>
+        </insert>
+        <insert tableName="UserBankCard">
+            <column name="version" value="0"/>
+            <column name="userId" value="2000"/>
+            <column name="cardId" value="C0002"/>
+            <column name="cardnumber" value="5390508354245119"/>
+            <column name="cvc" value="456"/>
+            <column name="name" value="Teszt Benedek"/>
+            <column name="amount" value="2000"/>
+            <column name="currency" value="HUF"/>
+        </insert>
+        <insert tableName="UserBankCard">
+            <column name="version" value="0"/>
+            <column name="userId" value="3000"/>
+            <column name="cardId" value="C0003"/>
+            <column name="cardnumber" value="4929088924014470"/>
+            <column name="cvc" value="789"/>
+            <column name="name" value="Teszt Cecília"/>
+            <column name="amount" value="3000"/>
+            <column name="currency" value="HUF"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
