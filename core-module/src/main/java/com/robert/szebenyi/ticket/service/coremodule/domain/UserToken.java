@@ -17,15 +17,12 @@ import javax.persistence.Entity;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString()
-public class Users extends BaseDomain {
+public class UserToken extends BaseDomain {
 
     @Column(name = "userId", nullable = false, unique = true)
-    private Long userId;
+    private String userId;
 
-    @Column(name = "name", nullable = false)
-    private String name;
-
-    @Column(name = "email", nullable = false)
-    private String email;
+    @Column(name = "token", nullable = false)
+    private String token;
 
 }

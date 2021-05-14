@@ -14,6 +14,7 @@ public class UsersService {
 
     private final UsersRepository usersRepository;
 
+    // Dummy test TODO delete it later
     public void test() {
         System.out.println(usersRepository.findAll());
     }

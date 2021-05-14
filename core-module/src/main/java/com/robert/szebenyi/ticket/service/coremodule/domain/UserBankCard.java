@@ -17,15 +17,26 @@ import javax.persistence.Entity;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString()
-public class Users extends BaseDomain {
+public class UserBankCard extends BaseDomain {
 
     @Column(name = "userId", nullable = false, unique = true)
     private Long userId;
 
+    @Column(name = "cardId", nullable = false, unique = true)
+    private String cardId;
+
+    @Column(name = "cardnumber", nullable = false)
+    private Long cardNumber;
+
+    @Column(name = "cvc", nullable = false)
+    private int cvc;
+
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "email", nullable = false)
-    private String email;
+    @Column(name = "amount")
+    private Long amount;
 
+    @Column(name = "currency", nullable = false)
+    private String currency;
 }
