@@ -6,5 +6,6 @@
 
     <include relativeToChangelogFile="true" file="schema/db.changelog-schema.xml"/>
     <include relativeToChangelogFile="true" file="dictionary/db.changelog-dictionary.xml"/>
+    <include relativeToChangelogFile="true" file="schema/db.changelog-schema-events.xml"/>
 
 </databaseChangeLog>
