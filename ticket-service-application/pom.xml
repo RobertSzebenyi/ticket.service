@@ -39,11 +39,6 @@
 
         <dependency>
             <groupId>com.robert.szebenyi</groupId>
-            <artifactId>partner-module</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.robert.szebenyi</groupId>
             <artifactId>ticket-module</artifactId>
         </dependency>
 
