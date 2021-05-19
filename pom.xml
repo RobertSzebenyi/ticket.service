@@ -22,7 +22,6 @@
         <module>ticket-service-application</module>
         <module>core-module</module>
         <module>ticket-module</module>
-        <module>partner-module</module>
     </modules>
 
 
@@ -32,7 +31,14 @@
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
         <build.timestamp>${maven.build.timestamp}</build.timestamp>
 
+        <commons.io.version>2.4</commons.io.version>
+        <commons.logging.version>1.1.1</commons.logging.version>
+        <commons.collections.version>4.1</commons.collections.version>
+        <commons.validator.version>1.6</commons.validator.version>
+
+
         <junit-jupiter.version>5.3.2</junit-jupiter.version>
+        <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
     </properties>
 
     <build>
@@ -162,12 +168,6 @@
 
             <dependency>
                 <groupId>com.robert.szebenyi</groupId>
-                <artifactId>partner-module</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.robert.szebenyi</groupId>
                 <artifactId>ticket-module</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -179,9 +179,39 @@
             </dependency>
 
             <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <scope>runtime</scope>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons.collections.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons.logging.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${commons.validator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.glassfish.jersey.media</groupId>
+                <artifactId>jersey-media-multipart</artifactId>
+                <version>${jersey.version}</version>
             </dependency>
 
             <dependency>
